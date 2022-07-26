@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: #0f141e;
+}
+
+.container {
+  /*выравнивание блоков с помощью относительного позиционирования*/
+  /* position: relative; */
+
+  /*3 СПОСОБ - с помощью display: flex*/
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.sidebar {
+  background: #004078;
+  width: 290px;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0 10px 10px;
+  /* 1 СПОСОБ - выравнивание блока по левому краю с помощью float*/
+  /* float: left;
+  margin: 10px 0 0 10px; */
+
+  /*2 СПОСОБ - выравнивание блока с помощью абсолютного позиционирования*/
+  /* position: absolute;
+  top: 10px;
+  left: 10px; */
+}
+
+.avatar {
+  width: 200px;
+  height: 300px;
+  margin: 22px;
+  border-radius: 10px;
+}
+
+.sidebar h2 {
+  background: #00315e;
+  text-align: left;
+  padding: 3px 0 3px 44px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1f1f1;
+}
+
+.contacts ul {
+  list-style-type: none;
+}
+
+.fa {
+  display: block;
+}
+
+.contacts ul li {
+  text-align: left;
+  padding: 10px 0 5px 18px;
+}
+
+.contacts ul li:hover {
+  cursor: pointer;
+}
+
+span {
+  padding-left: 10px;
+}
+
+span:hover {
+  text-decoration: underline;
+}
+
+a:hover,
+.fa-envelope:hover {
+  color: #7fffd4;
+}
+
+.languages p {
+  text-align: left;
+  padding: 10px 0 5px 40px;
+}
+
+.skils ul {
+  text-align: left;
+  padding: 10px 0 0 40px;
+}
+
+.skils ul li {
+  padding-bottom: 5px;
+}
+
+.hobby ul {
+  text-align: left;
+  padding: 10px 0 0 40px;
+}
+
+.hobby ul li {
+  padding-bottom: 5px;
+}
+
+.qualities ul {
+  text-align: left;
+  padding: 10px 0 0 40px;
+}
+
+.qualities ul li {
+  padding-bottom: 5px;
+}
+
+.content {
+  background: #fff;
+  width: 590px;
+  margin: 10px 10px 10px 0;
+
+  /*1 - СПОСОБ - выравнивание блока по правому краю с помощью float*/
+  /* float: right;
+  margin: 10px 10px 0 0; */
+
+  /*2 СПОСОБ - выравнивание блока с помощью абсолютного позиционирования*/
+  /* position: absolute;
+  left: 300px;
+  top: 10px;
+  right: 10px; */
+}
+
+.about h1 {
+  text-transform: uppercase;
+  padding: 22px 0 10px 20px;
+}
+
+.about h2,
+.education h2 {
+  text-transform: uppercase;
+  padding: 0 0 15px 20px;
+}
+
+#location {
+  width: 14px;
+  height: 14px;
+  padding-right: 10px;
+}
+
+#age {
+  width: 14px;
+  height: 14px;
+  padding-left: 80px;
+  padding-right: 10px;
+}
+
+.about .locage ul li {
+  color: #979797;
+  display: inline;
+  padding-left: 20px;
+}
+
+#briefcase,
+#master {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+#expline,
+#eduline {
+  background-color: #004078;
+  width: 300px;
+  height: 1px;
+  margin-bottom: 8px;
+}
+
+.job,
+.university .education {
+  width: 100%;
+}
+
+.job table td.year,
+.university table td.year {
+  width: 30%;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 10px;
+  color: #808080;
+}
+
+.job table td h4,
+.university table td h4 {
+  text-align: left;
+  padding: 10px 0 10px 20px;
+  color: #212121;
+}
+
+.job td p,
+.university td p {
+  text-align: left;
+  font-style: italic;
+  color: #808080;
+  padding-left: 20px;
+}
+
+.job td ul {
+  padding: 5px 0 5px 40px;
+}
+
+.job td ul li {
+  padding-bottom: 5px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.university td p {
+  padding-bottom: 5px;
+}
+
+@media (max-width: 806px) {
+  .contacts ul li,
+  .skils ul li,
+  .hobby ul li,
+  .qualities ul li {
+    margin-left: -10px;
+  }
+
+  .contacts h2,
+  .languages h2,
+  .languages p,
+  .skils h2,
+  .hobby h2,
+  .qualities h2 {
+    padding-left: 33px;
+  }
+}
+
+@media (max-width: 804px) {
+  .about .locage ul li {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  #age {
+    padding-left: 0px;
+  }
+}
